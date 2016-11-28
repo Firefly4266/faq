@@ -1,8 +1,9 @@
-//accessing the same answer/dropdown functionality as before by chaining on the .slideToggle onto the .next() method.
-
+//by adding .children to $(this) we get back the arrow functionality as demonstrated by the console.log. once the .toggleClass is re-attached functionality is the same as before.
 
 $(".question").click(function(){
   $(this).next().slideToggle("slow");
+  // console.log($(this).children());
+  $(this).children().toggleClass("collapse");
   // $("#a1").slideToggle("slow");
   // $("#arrow1-down, #arrow1-up").toggleClass("collapse");
 })
