@@ -1,8 +1,8 @@
-//accessing the answer using the ".next()" method.
+//accessing the same answer/dropdown functionality as before by chaining on the .slideToggle onto the .next() method.
 
 
 $(".question").click(function(){
-  console.log($(this).next());
+  $(this).next().slideToggle("slow");
   // $("#a1").slideToggle("slow");
   // $("#arrow1-down, #arrow1-up").toggleClass("collapse");
 })
