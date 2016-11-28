@@ -1,7 +1,8 @@
-// demonstrating how "this" is scoped by console logging the click event using the ".question" class instead of the "#q" id. Open with live-server and click on the drop downs, then look at what "this" is.
+//accessing the answer using the ".next()" method.
+
 
 $(".question").click(function(){
-  console.log($(this));
+  console.log($(this).next());
   // $("#a1").slideToggle("slow");
   // $("#arrow1-down, #arrow1-up").toggleClass("collapse");
 })
